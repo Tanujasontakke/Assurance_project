@@ -12,9 +12,10 @@ public:
 };
 
 class AVLTree {
-private:
+public:
     AVLNode* root;
-
+    AVLTree();
+    ~AVLTree();
     int getHeight(AVLNode* node);
     int getBalanceFactor(AVLNode* node);
     AVLNode* rotateRight(AVLNode* node);
@@ -26,11 +27,6 @@ private:
     void inOrderTraversal(AVLNode* node);
     void postOrderTraversal(AVLNode* node);
     void destroyTree(AVLNode* node);
-
-public:
-    AVLTree();
-    ~AVLTree();
-
     void insert(int data);
     void remove(int data);
     void display();
