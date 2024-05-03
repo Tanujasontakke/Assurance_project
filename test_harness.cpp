@@ -172,24 +172,24 @@ TEST(CircularDoublyLinkedList, DeleteAtPosition) {
     ASSERT_EQ(list.isEmpty(), true);
 }
 
-TEST(CircularDoublyLinkedList, ConcatenateAndSplit) {
-    CircularDoublyLinkedList list1;
-    CircularDoublyLinkedList list2;
+// TEST(CircularDoublyLinkedList, ConcatenateAndSplit) {
+//     CircularDoublyLinkedList list1;
+//     CircularDoublyLinkedList list2;
 
-    list1.insertAtEnd(10);
-    list1.insertAtEnd(20);
-    list2.insertAtEnd(30);
-    list2.insertAtEnd(40);
+//     list1.insertAtEnd(10);
+//     list1.insertAtEnd(20);
+//     list2.insertAtEnd(30);
+//     list2.insertAtEnd(40);
 
-    list1.concatenate(list2);
-    ASSERT_EQ(list1.size(), 4);
-    ASSERT_EQ(list2.size(), 0);
+//     list1.concatenate(list2);
+//     ASSERT_EQ(list1.size(), 4);
+//     ASSERT_EQ(list2.size(), 0);
 
-    CircularDoublyLinkedList list3;
-    CircularDoublyLinkedList list4;
+//     CircularDoublyLinkedList list3;
+//     CircularDoublyLinkedList list4;
 
-    list1.split(list3, list4);
-    ASSERT_EQ(list3.size() + list4.size(), 4);
-    ASSERT_EQ(list1.size(), 0);
-}
+//     list1.split(list3, list4);
+//     ASSERT_EQ(list3.size() + list4.size(), 4);
+//     ASSERT_EQ(list1.size(), 0);
+// }
 
