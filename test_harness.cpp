@@ -144,8 +144,8 @@ TEST(CircularDoublyLinkedList, InsertAtPosition) {
     unsigned int position = DeepState_UInt();
     int data = DeepState_Int();
     list.insertAtPosition(data, position);
-    ASSERT_EQ(list.size(), 1);
-    ASSERT_EQ(list.isEmpty(), false);
+    ASSERT_EQ(list.size(), 1) << list.size();
+    ASSERT_EQ(list.isEmpty(), false) << list.isEmpty();
 }
 
 TEST(CircularDoublyLinkedList, DeleteAtBeginning) {
